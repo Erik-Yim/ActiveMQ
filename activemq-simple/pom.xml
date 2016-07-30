@@ -20,15 +20,27 @@
 		<artifactId>spring-boot-starter-web</artifactId> 
   	</dependency>
   	
+	<dependency>  
+	   	<groupId>org.springframework.boot</groupId>  
+	   	<artifactId>spring-boot-configuration-processor</artifactId>  
+	   	<optional>true</optional>  
+	</dependency> 
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jms</artifactId>
+	</dependency>
+  	
   	<dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jms</artifactId>
-    </dependency>
-    
-    <dependency>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-broker</artifactId>
-    </dependency>
+	    <groupId>org.apache.activemq</groupId>
+	    <artifactId>activemq-all</artifactId>
+	    <version>5.13.4</version>
+	</dependency>
+	
+	<dependency>  
+		<groupId>org.apache.activemq</groupId>  
+		<artifactId>activemq-pool</artifactId>  
+	</dependency> 
   	
   	<dependency>  
 		<groupId>org.springframework.boot</groupId>  
