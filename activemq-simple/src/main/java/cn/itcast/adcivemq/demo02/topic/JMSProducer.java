@@ -1,4 +1,4 @@
-package cn.itcast.adcivemq.demo01;
+package cn.itcast.adcivemq.demo02.topic;
 
 import java.io.Serializable;
 
@@ -18,7 +18,7 @@ import javax.jms.TextMessage;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
-// 点对点 消息生产者
+// 主题 生产者  发布消息
 public class JMSProducer {
 	private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;// 默认的连接的用户名
 	private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;// 默认的连接密码
@@ -53,7 +53,7 @@ public class JMSProducer {
 			 * 如果是重复的消息，那么JMSprovider必须把消息头的JMSRedelivered字段设置为true
 			 */
 			session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
-			destination = session.createQueue("FirstQuene");//创建消息队列
+			destination = session.createTopic("FirstTopic");//创建主题
 			messageProducer = session.createProducer(destination);//创建消息生产者
 			sendMessage(session, messageProducer, MsgTypeEnum.TEXT);
 			//由于设置添加事务，这里需要使用提交才能将数据发送出去

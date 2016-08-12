@@ -1,4 +1,4 @@
-package cn.itcast.adcivemq.demo02;
+package cn.itcast.adcivemq.demo01.queue;
 
 public enum MsgTypeEnum {
 	TEXT("text", "文本信息"), MAP("map", "Map信息"), STREAM("stream", "流信息"), OBJECT("object", "对象信息"), BYTES("byte", "字节信息");

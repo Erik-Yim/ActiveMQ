@@ -1,4 +1,4 @@
-package cn.itcast.adcivemq.demo02;
+package cn.itcast.adcivemq.demo02.topic;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;

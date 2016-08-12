@@ -1,4 +1,4 @@
-package cn.itcast.adcivemq.demo01;
+package cn.itcast.adcivemq.demo01.queue;
 
 import java.io.Serializable;
 
