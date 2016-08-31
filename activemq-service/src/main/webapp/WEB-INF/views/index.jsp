@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://127.0.0.1/resources/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:81/resources/jquery-1.9.1.js"></script>
  </head>   
 <body>
-<img alt="读取自定义配置myres中的图片" src="http://127.0.0.1/resources/demo.jpg">
+<img alt="读取自定义配置myres中的图片" src="http://127.0.0.1:81/resources/demo.jpg">
 <br/><br/><br/>
 用户姓名：<input type="text" id="username" />
 用户密码：<input type="text" id="password" />
